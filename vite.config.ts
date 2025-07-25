@@ -8,13 +8,7 @@ export default defineConfig(({ command }) => {
   return {
     plugins: [react(), tsconfigPaths()],
     resolve: {
-      alias: [
-        { find: '@', replacement: path.resolve(__dirname, './src') },
-        {
-          find: 'node_modules',
-          replacement: path.resolve(__dirname, './node_modules'),
-        },
-      ],
+      alias: [{ find: '@', replacement: path.resolve(__dirname, './src') }],
     },
     build: {
       outDir: './dist',
