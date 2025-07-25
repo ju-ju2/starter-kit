@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'node_modules/react-router-dom/dist';
+import { useParams } from 'react-router-dom';
 
 function PostDetail() {
   const [initId, setInitId] = useState<string>('');

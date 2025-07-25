@@ -2,7 +2,11 @@
   "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
   "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
   "files": { "ignoreUnknown": false },
-  "formatter": { "enabled": true, "indentStyle": "tab" },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -97,7 +101,11 @@
     "includes": ["**", "!.eslintrc.cjs", "!dist/**/*"]
   },
   "javascript": {
-    "formatter": { "quoteStyle": "double" },
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "always",
+      "trailingCommas": "es5"
+    },
     "globals": [
       "onanimationend",
       "ongamepadconnected",
